@@ -8,7 +8,7 @@ function getResult(data) {
 
     for(let j = l + 1; j < data.length; j += 1){
 
-      if (data[j] > max) {
+      if (data[j] < max) {
         maxIndex = j;
       }
     }
@@ -24,5 +24,5 @@ function getResult(data) {
 }
 
 
-const data = [1, 2, 3, 1, 4,];
+const data = [1, 1,2131,3,5,2, 1231,6];
 console.log(getResult(data));
