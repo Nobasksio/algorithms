@@ -9,8 +9,7 @@ function getResult(data) {
      for(let r = l + 1; r < data.length; r += 1){
        if (item > data[r]) {
          indexMemo = r;
-         const temp = data[r];
-         data[r - 1] = temp;
+         data[r - 1] = data[r];
        } else {
          break
        }
