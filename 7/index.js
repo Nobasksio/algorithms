@@ -14,7 +14,6 @@ function getResult(data) {
         break;
       }
     }
-
     if (isSimple) arr.push(i);
   }
 
