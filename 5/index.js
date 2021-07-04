@@ -1,5 +1,3 @@
-const levels = [];
-
 function getResult(data) {
 
   let queue = [];
