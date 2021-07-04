@@ -14,7 +14,6 @@ function getResult(data) {
       for(let i = 0; i < tempNode.children.length; i += 1) {
         queue.push(tempNode.children[i]);
       }
-
     }
   }
   return values;
