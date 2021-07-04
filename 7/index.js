@@ -3,13 +3,13 @@ function getResult(data) {
   if(data === 1) return [1];
   if(data === 2) return [1, 2];
 
-  let arr = [];
+  let arr = [2];
 
-  for(let i = 2; i < data; i += 1) {
+  for(let i = 3; i < data; i += 1) {
     let isSimple = true;
-    for(let j = 2; i / j > 1; j += 1) {
 
-      if (i % j === 0) {
+    for(let j = 0; j < arr.length; j += 1) {
+      if (i % arr[j] === 0) {
         isSimple = false;
         break;
       }
@@ -17,7 +17,8 @@ function getResult(data) {
 
     if (isSimple) arr.push(i);
   }
-  return arr
+
+  return [1, ...arr]
 }
 
 
