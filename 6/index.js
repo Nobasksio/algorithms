@@ -48,5 +48,5 @@ function getResult(data) {
 
 
 
-const data = `[{}]`;
+const data = `][`;
 console.log(getResult(data));
