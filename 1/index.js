@@ -20,5 +20,5 @@ function getResult(data) {
 }
 
 
-const data = [0, 1, 3,3, 4];
+const data = [];
 console.log(getResult(data));
