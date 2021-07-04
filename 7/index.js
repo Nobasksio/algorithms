@@ -1,27 +1,26 @@
 function getResult(data) {
 
-  const arr = [];
+  if(data === 1) return [1];
+  if(data === 2) return [1, 2];
 
-  for(let i = 0; i < data.length; i += 1) {
+  let arr = [];
 
+  for(let i = 2; i < data; i += 1) {
     let isSimple = true;
-    const number = data[i];
-    for(let j = 2; number / j > 1; j += 1) {
+    for(let j = 2; i / j > 1; j += 1) {
 
-      if (number % j === 0) {
+      if (i % j === 0) {
         isSimple = false;
         break;
       }
     }
 
-    if (isSimple) arr.push(number);
+    if (isSimple) arr.push(i);
   }
-
   return arr
-
 }
 
 
 
-const data = [1, 3, 4, 5, 6, 7, 25, 23, 100, 333, 101];
+const data = [1000];
 console.log(getResult(data));
